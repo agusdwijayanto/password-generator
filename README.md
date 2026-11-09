@@ -53,4 +53,4 @@ npm test
 npm run build
 ```
 
-Push ke branch `main` otomatis men-deploy versi terbaru ke GitHub Pages lewat GitHub Actions.
+Versi live di GitHub Pages di-deploy dari branch `gh-pages`, isinya hasil `npm run build` dari branch `main`.
