@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-ink text-white antialiased;
+  @apply bg-paper text-ink antialiased;
 }
 
 /* slider bawaan browser perlu aksen eksplisit supaya nyambung tema */

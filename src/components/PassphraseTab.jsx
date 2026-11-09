@@ -16,13 +16,13 @@ export default function PassphraseTab() {
   return (
     <div className="space-y-4">
       <ResultBox value={result} onRegenerate={() => setResult(generatePassphrase(o))} />
-      <div className="grid gap-x-6 rounded-2xl bg-deep px-4 py-3 sm:grid-cols-2">
+      <div className="grid gap-x-6 rounded-2xl border border-line bg-card shadow-sm px-4 py-3 sm:grid-cols-2">
         <Stepper label="Jumlah kata" value={o.wordCount} onChange={set('wordCount')} min={3} max={20} />
         <label className="flex min-h-11 items-center justify-between gap-3 py-1">
           <span className="text-sm sm:text-base">Pemisah kata</span>
           <input value={o.separator} maxLength={3} aria-label="Pemisah kata"
             onChange={(e) => set('separator')(e.target.value)}
-            className="h-11 w-16 rounded-xl bg-card px-3 text-center font-mono outline-none focus:ring-2 focus:ring-accent" />
+            className="h-11 w-16 rounded-xl border border-line bg-paper px-3 text-center font-mono text-ink outline-none focus:ring-2 focus:ring-accent" />
         </label>
         <Toggle label="Huruf kapital" checked={o.capitalize} onChange={set('capitalize')} />
         <Toggle label="Sertakan nomor" checked={o.includeNumber} onChange={set('includeNumber')} />
