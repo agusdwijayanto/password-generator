@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ink text-white antialiased;
+}
+
+/* slider bawaan browser perlu aksen eksplisit supaya nyambung tema */
+input[type='range'] {
+  @apply accent-accent;
+}
